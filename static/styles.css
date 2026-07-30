@@ -1,6 +1,6 @@
 body{
     background-color: #F7F4F3;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* HOME PAGE */
@@ -8,6 +8,7 @@ body{
 .home_page{
     text-align: center;
 }
+
 
 .website_title{
     text-align:left;
@@ -56,7 +57,7 @@ nav a {
     margin: 5px
 }
 
-/* cards on how it works*/
+/* cards on "How It Works" Section*/
 .card{
     background-color: #E8EFF4;
     color: #324E66;
@@ -76,7 +77,7 @@ nav a {
 
 /* DONATE AN ITEM PAGE */
 
-.form{
+.donate{
     background-color: #E8EFF4;
     text-align:left;
     border: 2px solid #9DB6C9;
@@ -92,6 +93,7 @@ nav a {
     color: #324E66;
     font-weight: bold;
 }
+
 .donate_item{
     text-align: left;
     margin:5px;
@@ -106,7 +108,7 @@ nav a {
 .cards{
     display:inline-block;
     vertical-align: top;
-    width: 420px;
+    width: 400px;
     height:400px;
     text-align: left;
     background-color: #E8EFF4;
