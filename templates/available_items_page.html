@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Available Items</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body class="home_page">
+        <h1 class="wesbite_title">CommunityGive</h1>
+        <!-- links to differnt pages of website w/navigation bar -->
+        <nav>
+        <a href="/">Home</a>
+        <a href="/donate_page">Donate An Item</a>
+        <a href="/available_items_page">Available Items</a>
+        </nav>
+        <h2 class="available_item">Available Items</h2>
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <p role="alert">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Donations submitted thorugh form (creates card for each item donated)-->
+        <!-- filter items thorugh a button -->
+        <div>
+            <button onclick="filterItems('All')">All</button>
+            <button onclick="filterItems('Clothing, Footwear, and Accessories')">Clothing, Footwear, and Accessories</button>
+            <button onclick="filterItems('Household Goods and Home Items')">Household Goods and Home Items</button>
+            <button onclick="filterItems('Sports and Outdoor Equipment')">Sports and Outdoor Equipment</button>
+            <button onclick="filterItems('Office and School Supplies')">Office and School Supploes</button>
+        </div>
+        <!-- shows each donated item -->
+        {% for item in donations %}
+        <div class="cards" data-category="{{item.category}}">
+            <h2>{{item.name}}<h2>
+            <p>Category: {{item.category}}</p>
+            <p>Description: {{item.description}}</p>
+            <p>Location: {{item.location}}</p>
+            <p>Contact Information: {{item.contact_info}}</p>
+        </div>
+        {% endfor %}
+        <script>
+        // filter items by category
+        function filterItems(category){
+            let cards = document.querySelectorAll(".cards");
+            // show items that match w/category hide the others
+            for(let card of cards){
+                if(category == "All" || card.dataset.category == category){
+                    card.style.display = "inline-block";
+                }else{
+                    card.style.display="none"
+                }
+            }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+body{
+    background-color: #F7F4F3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HOME PAGE */
+
+.home_page{
+    text-align: center;
+}
+
+.website_title{
+    text-align:left;
+    margin-left:30px;
+}
+
+.img{
+    text-align: right;
+}
+/* navigation bar */
+nav{
+    background-color: #E8EFF4;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    margin:5px;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #324E66;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* info on home page */
+.reason{
+    background-color: #9DB6C9;
+    color: #324E66;
+    border-radius: 10px;
+    padding: 100px;
+    margin: 5px;
+}
+
+.mission{
+    background-color: #E8EFF4;
+    color: #324E66;
+    border-radius: 10px;
+    padding: 100px;
+    margin:5px;
+}
+
+.how_it_works{
+    background-color: #5F7B94;
+    color:#324E66;
+    border-radius:10px;
+    padding: 100px;
+    margin: 5px
+}
+
+/* cards on how it works*/
+.card{
+    background-color: #E8EFF4;
+    color: #324E66;
+    border-radius: 10px;
+    border: 2px solid #5F7B94;
+    padding: 10px;
+    margin: 15px;
+}
+
+.reason p,.mission p{
+    font-size: 25px;
+}
+
+.reason h1,.mission h1,.how_it_works h1{
+    font-size: 40px;
+}
+
+/* DONATE AN ITEM PAGE */
+
+.form{
+    background-color: #E8EFF4;
+    text-align:left;
+    border: 2px solid #9DB6C9;
+    border-radius: 10px;
+    padding:30px;
+    margin:5px;
+}
+
+.Form{
+    font-size:20px;
+    padding: 10px;
+    margin:5px;
+    color: #324E66;
+    font-weight: bold;
+}
+.donate_item{
+    text-align: left;
+    margin:5px;
+    padding:20px;
+}
+
+/* AVAILABLE ITEMS PAGE*/
+.available_item{
+    text-align: left;
+    margin:25px;
+}
+.cards{
+    display:inline-block;
+    vertical-align: top;
+    width: 420px;
+    height:400px;
+    text-align: left;
+    background-color: #E8EFF4;
+    color: #324E66;
+    border-radius: 10px;
+    border: 2px solid #5F7B94;
+    padding: 10px;
+    margin: 15px;
+}

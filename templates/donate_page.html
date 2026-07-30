@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate Item</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="home_page">
+    <h1 class="wesbite_title">CommunityGive</h1>
+    <!-- links to differnt pages of website w/navigation bar -->
+    <nav>
+    <a href="/">Home</a>
+    <a href="/donate_page">Donate An Item</a>
+    <a href="/available_items_page">Available Items</a>
+    </nav>
+    <h2 class="donate_item">Donate An Item</h2>
+    <!-- form send info to Flask POST route -->
+    <div class="form">
+    <form action="/donations" method="POST">
+        <div class="Form">
+        <p>Name of Item:</p>
+        <input type="text" name="name">
+
+        <!-- select from a drop-down menu -->
+        <p>Category:</p>
+        <select type ="text" name="category">
+            <option value="Clothing, Footwear, and Accessories">Clothing, Footwear, and Accessories</option>
+            <option value="Household Goods and Home Items">Houshold Goods and Home Items</option>
+            <option value="Sports and Outdoor Equipment">Sports and Outdoor Equipment</option>
+            <option value="Office and School Supplies">Office and School Supplies</option>
+        </select>
+        <p>Description of Item:</p>
+        <input type="text" name="description" >
+
+        <p>Location (Where to pick up item)</p>
+        <input type="text" name="location">
+
+        <p>Contact Information (phone number)</p>
+        <input type="text" name="contact_info">
+        </div>
+        <!-- submit button sends data from the form to Flask -->
+        <button type="submit">Donate an Item</button>
+    </form>
+    </div>
+</body>
+</html>
