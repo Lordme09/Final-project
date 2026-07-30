@@ -4,7 +4,7 @@ What the app does
 - Can add item information that is saved and shown on the Available Items Page
 
 How to install dependencies and run it locally
-- Install dependencies thorugh pip install -r requirement.txt
+- Install dependencies thorugh pip install requirement.txt
 - Create the database: python create_database.py
 - Run python app.py
 - Open http://127.0.0.1:5000 in browser
