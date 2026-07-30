@@ -7,7 +7,7 @@ How to install dependencies and run it locally
 - Install dependencies thorugh pip install -r requirement.txt
 - Create the database: python create_database.py
 - Run python app.py
-- Open http://127.0.0.1:5001 in browser
+- Open http://127.0.0.1:5000 in browser
 
 Which point(s) your team completed and where to find them in the code (e.g. "POST endpoint at /submit in app.py")
 - Persistent Data Store: Saved donation information using a SQLite database (donations.db) It can be found in app.py and create_database.py
