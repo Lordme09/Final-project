@@ -62,12 +62,6 @@ Located in Files: available_items_page.html, app.py
 
 ![Available Items Code Screenshot](images_for_README/available_item_code.png)
 
->@app.route("/available_items_page")
->def available_items_page():
-    >df = pd.read_sql('SELECT * FROM donations', con='sqlite:///>donations.db')
-    >donations = df.to_dict('records')
-    >return render_template('available_items_page.html', >donations=donations)
-
 The page gets the infomation from the donatinon form from the SQLite database and shows the items for the users to view
 
 # Installation and Local Setup
