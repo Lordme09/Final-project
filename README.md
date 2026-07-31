@@ -27,8 +27,7 @@ Users provide:
 
 The form sends data using a POST request
 
->@app.route('/donations', methods=['POST'])
-def add_donation():
+![Donate Code Screenshot](images_for_README/donation_code.png)
 
 This route recieves the information from the donation and saves it into the SQLite database
 
@@ -44,9 +43,7 @@ The database stores:
 - Location
 - Contact Information
 
->donations_df = pd.DataFrame(donations_data)
->donations_df.to_sql('donations',con='sqlite:///donations.db' if_exists='replace',index=False)
->print("Database created successfully!")
+![Database Code Screenshot](images_for_README/database_code.png)
 
 This code creates and stores the submitted item so it can be shown on the Available Items Page
 
@@ -61,7 +58,9 @@ Users can:
 - Browse avaible otems
 - Contact onwer to arrange pickup
 
-Located in Files: avaiable_tems_page.html, app.py
+Located in Files: available_items_page.html, app.py
+
+![Available Items Code Screenshot](images_for_README/available_item_code.png)
 
 >@app.route("/available_items_page")
 >def available_items_page():
