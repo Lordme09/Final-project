@@ -7,12 +7,12 @@
 # Application Tutorial 
 
 ## Home Page
-![Homepage Screenshot](image/home_page.png)
+![Homepage Screenshot](images_for_README/home_page.png)
 
 >The home page introduces CommunityGive and its misson. The navigation bar guides to the other pages of the application
 
 ## Donate An Item Page
-![Donate Page Screenshot](image/donate_page.png)
+![Donate Page Screenshot](images_for_README/donate_page.png)
 
 Files: donate_page.html, app.py
 
@@ -51,7 +51,7 @@ The database stores:
 This code creates and stores the submitted item so it can be shown on the Available Items Page
 
 ## Available Items Page
-![Available Items Page Screenshot](image/available_items_page.png)
+![Available Items Page Screenshot](images_for_README/available_items_page.png)
 
 The Available Items page shows donated items submitted by users
 
